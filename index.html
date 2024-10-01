@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="Page-body is-datalayer" >
+
+
+  <div id="LoginForm" class="LoginForm is-loginform" data-loginform="{&quot;autoLoginForm&quot;:&quot;none&quot;}" style="--formBackgroundImg:url('');--mobileFormBackgroundImg:url('');">
+    <div class="LoginForm-container">
+      <div class="LoginForm-transparency"></div>
+      <div class="LoginForm-login-container" style="top: 124px;">
+        <i class="LoginForm-close far fa-times" data-origin="PopUp"></i>
+        <div class="LoginForm-login-panel">
+          <div class="LoginForm-title">Autentícate por única ocasión.</div>
+          <div class="LoginForm-description">Para disfrutar el contenido completo de TV Azteca.</div>
+          <div class="LoginForm-providers">
+
+            <div class="LoginForm-providers--item">
+              <button class="oauth-signin" data-origin="PopUp"><svg aria-hidden="true" class="native svg-icon iconGoogle" width="18" height="18" viewBox="0 0 18 18">
+                  <path fill="#4285F4" d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18Z">
+                  </path>
+                  <path fill="#34A853" d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17Z">
+                  </path>
+                  <path fill="#FBBC05" d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18l2.67-2.07Z"></path>
+                  <path fill="#EA4335" d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.77 4.77 0 0 1 4.48-3.3Z">
+                  </path>
+                </svg>Continuar con Google</button>
+              <img class="oauth-signin-ytbranding" width="195" height="26" loading="lazy" src="assets/developed-with-youtube-lowercase-dark-medium.png" alt="Developed with YouTube">
+              <div class="gid-signin" data-origin="PopUp"></div>
+
+            </div>
+
+            <div class="LoginForm-providers--item">
+              <div id="appleid-signin" class="appleid-signin" data-mode="center-align" data-color="white" data-width="250" data-border="false" data-border-radius="0" data-height="40" data-origin="PopUp" data-type="sign in">
+                <div style=" font-synthesis: none; -moz-font-feature-settings: kern; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; width: 250px; height: 40px; min-width: 130px; max-width: 375px; min-height: 30px; max-height: 64px; position: relative; letter-spacing: initial;" role="button" tabindex="0" aria-label="Iniciar sesión con Apple">
+                  <div style=" padding-right: 8%; padding-left: 8%; position: absolute; box-sizing: border-box; width: 100%; height: 100%;">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="pointer-events: none; overflow: visible;" width="100%" height="100%">
+                      <g>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="overflow: visible;" width="100%" height="50%" y="25%" viewBox="0 -11 142.390625 14" fill="#000">
+                          <defs>
+                            <style>
+                              @font-face {
+                                font-family: "applied-button-font-0";
+                                src: url(data:application/x-font-woff;charset=utf-8;base64,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) format("woff")
+                              }
+                            </style>
+                          </defs>
+                          <text font-size="12px" textLength="142.390625" font-family="applied-button-font-0" direction="ltr"> Iniciar sesión con Apple</text>
+                        </svg>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style=" width: 100%; height: 100%; box-sizing: border-box;"><svg xmlns="http://www.w3.org/2000/svg" style=" overflow: visible;" width="100%" height="100%">
+                      <rect width="100%" height="100%" ry="0%" fill="#fff"></rect>
+                    </svg></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="LoginForm-providers--item">
+              <button id="EmailLoginButton" class="email-login-button" data-origin="PopUp"><i class="fas fa-envelope"></i>Iniciar con correo electrónico</button>
+              <button id="EmailLoginButton" class="email-login-button icononly" data-origin="PopUp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
+                  </path>
+                </svg>
+              </button>
+
+
+
+
+
+            </div>
+
+          </div>
+          <p class="LoginForm-legend">Al ingresar reconoces estar de acuerdo con el <a class="LoginForm-policy" href="">Aviso de Privacidad</a></p>
+        </div>
+        <div id="EmailLoginForm" class="EmailLoginForm">
+          <button class="EmailLoginForm-back"><i class="fas fa-arrow-left"></i></button>
+          <div class="LoginForm-title">Iniciar Sesión</div>
+          <form id="emailLogin">
+            <span class="LoginForm-msg"></span>
+            <label class="LoginForm-field-container">
+              <input class="LoginForm-field" name="email" type="text" placeholder="Correo electrónico" autocomplete="email" required="">
+            </label>
+            <label class="LoginForm-field-container">
+              <input class="LoginForm-field" name="password" type="password" placeholder="Contraseña" autocomplete="current-password" required="">
+              <button type="button" class="LoginForm-passtoggle"><i class="fas fa-eye"></i><i class="fas fa-eye-slash"></i></button>
+            </label>
+            <button class="LoginForm-submit" type="submit">Iniciar Sesión</button>
+          </form>
+          <p class="LoginForm-legend"><button class="EmailLoginForm-loginlink" data-action="recover">¿Olvidaste tu
+              contraseña?</button></p>
+          <p class="LoginForm-legend">¿No tienes cuenta? <button class="EmailLoginForm-loginlink" data-action="register">Regístrate</button></p>
+        </div>
+        <div class="LoginForm-recovery-panel">
+          <div id="RecoveryForm" class="RecoveryForm">
+            <button class="EmailLoginForm-back"><i class="fas fa-arrow-left"></i></button>
+            <div class="LoginForm-title">Recuperar contraseña</div>
+            <form id="emailRecovery" class="emailRecovery">
+              <span class="LoginForm-msg"></span>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="email" type="text" placeholder="Correo electrónico" autocomplete="email" required="">
+              </label>
+              <div class="LoginForm-legend">Se enviará un código de verificación a tu correo</div>
+              <button class="LoginForm-submit" type="submit">Enviar</button>
+              <p class="LoginForm-legend">¿No tienes cuenta? <button class="EmailLoginForm-loginlink" data-action="register">Regístrate</button></p>
+            </form>
+            <form id="RecoveryForm-verification" class="RecoveryForm-verification">
+              <span class="LoginForm-msg"></span>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="password" type="password" placeholder="Nueva contraseña" autocomplete="new-password" title="Mínimo 8 caracteres, un número, una mayúscula, una minúscula y un caracter especial @$!%*?&amp;" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;])[A-Za-z\d@$!%*?&amp;]{8,}$" required="">
+                <button type="button" class="LoginForm-passtoggle"><i class="fas fa-eye"></i><i class="fas fa-eye-slash"></i></button>
+              </label>
+              <div class="LoginForm-legend">Ingresa el código que enviamos al correo <span class="submittedMail"></span>
+              </div>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="vcode" type="text" placeholder="Código de Verificación" required="">
+              </label>
+              <a class="LoginForm-resend" href="" rel="nofollow">Reenviar Código</a>
+              <button class="LoginForm-submit" type="submit">Recuperar contraseña</button>
+            </form>
+          </div>
+        </div>
+        <div class="LoginForm-register-panel">
+          <div id="RegistryForm" class="RegistryForm">
+            <form id="emailRegistry" class="emailRegistry">
+              <div class="LoginForm-title">Regístrate</div>
+              <span class="LoginForm-msg"></span>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="fullname" type="text" placeholder="Nombre" required="">
+              </label>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="email" type="text" placeholder="Correo electrónico" autocomplete="email" required="">
+              </label>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="birthday" type="text" placeholder="Fecha de nacimiento" min="1904-10-01" max="2011-10-01" autocomplete="bday" onfocus="(this.type='date')" required="">
+              </label>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="password" type="password" placeholder="Contraseña" autocomplete="off" title="Mínimo 8 caracteres, un número, una mayúscula, una minúscula y un caracter especial @$!%*?&amp;" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&amp;])[A-Za-z\d@$!%*?&amp;]{8,}$" required="">
+                <button type="button" class="LoginForm-passtoggle"><i class="fas fa-eye"></i><i class="fas fa-eye-slash"></i></button>
+              </label>
+              <label class="LoginForm-checkbox-container">
+                <input class="LoginForm-checkbox" name="privacy" type="checkbox" required=""> Estoy de acuerdo con el <a href="">Aviso de Privacidad</a>
+              </label>
+              <button class="LoginForm-submit" type="submit">Registrarme</button>
+            </form>
+            <form id="RegistryForm-verification" class="RegistryForm-verification">
+              <span class="LoginForm-msg"></span>
+              <div class="LoginForm-title">Ingresa el código de verificación que enviamos a tu correo</div>
+              <label class="LoginForm-field-container">
+                <input class="LoginForm-field" name="vcode" type="text" placeholder="6 Dígitos" required="">
+              </label>
+              <a class="LoginForm-resend" href="" rel="nofollow">Reenviar Código</a>
+              <button class="LoginForm-submit" type="submit">Confirmar</button>
+            </form>
+            <p class="LoginForm-legend">¿Tienes cuenta? <button class="EmailLoginForm-loginlink" data-action="login">Iniciar Sesión</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="navbarCorporativo__container">
+    <nav class="navbarCorporativo">
+      <ul class="navbarCorporativo__items">
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+
+                <img src="assets/bazlogook.webp" alt="azteca logo">
+
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                TV Azteca
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                Azteca UNO
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                Azteca 7
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                Deportes
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                Noticias
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                adn40
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+        <li class="navbarCorporativo__items__item">
+
+          <div class="NavigationItem">
+            <div class="NavigationItem-text">
+
+              <a class="NavigationItem-text-link " href="">
+                a más +
+              </a>
+
+            </div>
+
+          </div>
+
+        </li>
+      </ul>
+    </nav>
+
+
+
+
+    <a href="" class="inklusionButton" rel="nofollow">
+
+      <picture>
+        <source width="100" height="100" srcset="https://tvazteca.brightspotcdn.com/dims4/default/dabcc69/2147483647/strip/true/crop/690x690+0+0/resize/100x100!/format/webp/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F50%2F91%2Fc2a024774cefae7eef133f8307f3%2Finklusion.png" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+        <!-- <p>imageSize SquareThumb</p> -->
+        <img class="Image" alt="Logo Inklusion" width="100" height="100" src="https://tvazteca.brightspotcdn.com/dims4/default/dabcc69/2147483647/strip/true/crop/690x690+0+0/resize/100x100!/format/webp/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F50%2F91%2Fc2a024774cefae7eef133f8307f3%2Finklusion.png">
+      </picture>
+
+    </a>
+
+
+    <div class="header-session">
+      <div class="LoginButton">
+        <button class="btn loginButton LoginButton-button" data-action="login">
+          <span class="LoginButton-UserPictures"></span>
+          <svg class="icon icon__login" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6C11 7.65685 9.65685 9 8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6Z" fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8ZM8 1C4.13401 1 1 4.13401 1 8C1 9.65343 1.57326 11.173 2.53186 12.3707C3.24293 11.2252 4.80464 10 8.00001 10C11.1954 10 12.7571 11.2252 13.4681 12.3707C14.4267 11.173 15 9.65343 15 8C15 4.13401 11.866 1 8 1Z" fill="white"></path>
+          </svg>
+          <span class="loginButton__label">Iniciar sesión</span>
+        </button>
+        <div class="LoginButton-loggeduser">
+          <div class="LoginButton-username"></div>
+          <div class="LoginButton-options">
+            <ul>
+              <li class="LoginButton-logout">Cerrar Sesión</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="Page-header">
+    <div class="Page-header-drawer ">
+      <div class="Page-logo">
+        <a href="" aria-label="logo">
+
+          <picture>
+
+            <source width="" height="46" srcset="https://tvazteca.brightspotcdn.com/38/74/c3a0cdd64a3396d5c045659d9865/logofia.svg">
+
+
+
+            <img class="PageLogo-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSI0NnB4IiB3aWR0aD0iMXB4Ij48L3N2Zz4=" alt="LogoFIA" width="334" height="46">
+
+          </picture>
+
+        </a>
+      </div>
+      <div class="MainNavigation-Hamburguer-label" for="hamburger_input">
+        <div class="MainNavigation-Hamburguer-top"></div>
+        <div class="MainNavigation-Hamburguer-mid"></div>
+        <div class="MainNavigation-Hamburguer-bot"></div>
+      </div>
+
+
+      <div class="MainNavigation-search-trigger" data-searchtoggle-trigger=""></div>
+      <form class="MainNavigation-search" action="https://www.tvazteca.com/aztecanoticias/busqueda" novalidate="" autocomplete="off" data-searchtoggle="">
+        <div class="MainNavigation-search-inputs">
+          <div class="MainNavigation-search-inputs-main">
+            <input type="text" class="MainNavigation-search" name="q" placeholder="Busca el contenido de tu interés">
+            <button type="submit" class="MainNavigation-search">searchButtonLabel</button>
+          </div>
+        </div>
+      </form>
+
+
+      <a href="" class="LiveButton LiveButton--active ">
+        <div class="Live-circle">
+          <div class="Live-circle-inner"></div>
+        </div>
+        <p class="LiveButton__label">Ver en Vivo</p>
+
+      </a>
+
+
+      <div class="MainNavigation-show" data-bsp-plugin="Module73975">
+        <div class="Header-menu">
+          <div class="Close-menu">
+            <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="2.71833" height="1.7093" rx="0.854648" transform="matrix(-0.866025 -0.5 -0.5 0.866025 19.8633 10.9773)" fill="#35B263"></rect>
+              <rect width="9.87893" height="1.7093" rx="0.854648" transform="matrix(-0.866025 -0.5 -0.5 0.866025 29.3386 16.4476)" fill="#35B263"></rect>
+              <rect width="13.4424" height="1.7093" rx="0.854648" transform="matrix(-0.866025 -0.5 -0.5 0.866025 13.2242 7.14441)" fill="#35B263"></rect>
+              <rect x="0.494263" y="16.4476" width="32.0493" height="1.7093" rx="0.854648" transform="rotate(-30 0.494263 16.4476)" fill="#35B263"></rect>
+            </svg>
+          </div>
+        </div>
+        <div class="Images-container">
+
+          <div class="Images-container-row main-row">
+
+            <div class="Navigation-Image Show-Navigation" navigation-index="0">
+
+              <picture>
+                <source width="177" height="50" srcset="https://tvazteca.brightspotcdn.com/dims4/default/b455547/2147483647/strip/true/crop/230x65+0+0/resize/177x50!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F79%2F83%2F5cd66e224bccbe5ca6b2be66ef36%2Fnoticiasmenu.png" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="Noticias" width="177" height="50" src="https://tvazteca.brightspotcdn.com/dims4/default/b455547/2147483647/strip/true/crop/230x65+0+0/resize/177x50!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F79%2F83%2F5cd66e224bccbe5ca6b2be66ef36%2Fnoticiasmenu.png">
+              </picture>
+
+            </div>
+
+
+
+
+
+
+            <div class="Navigation-Image" navigation-index="1">
+
+              <picture>
+                <source height="50" srcset="https://tvazteca.brightspotcdn.com/fb/37/1c55265d477daba07bf8fb1e2a54/tvaztecamenu.svg" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="T V Azteca" height="50" src="https://tvazteca.brightspotcdn.com/fb/37/1c55265d477daba07bf8fb1e2a54/tvaztecamenu.svg">
+              </picture>
+
+            </div>
+
+
+
+
+
+
+            <div class="Navigation-Image" navigation-index="2">
+
+              <picture>
+                <source width="102" height="50" srcset="https://tvazteca.brightspotcdn.com/dims4/default/126039d/2147483647/strip/true/crop/133x65+0+0/resize/102x50!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F73%2Fd4%2Feedcab9b4ab49d05cd6140c36b7f%2Faztecaunomenu.png" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="Azteca UNO" width="102" height="50" src="https://tvazteca.brightspotcdn.com/dims4/default/126039d/2147483647/strip/true/crop/133x65+0+0/resize/102x50!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F73%2Fd4%2Feedcab9b4ab49d05cd6140c36b7f%2Faztecaunomenu.png">
+              </picture>
+
+            </div>
+
+
+          </div>
+
+          <div class="Images-container-row ">
+
+            <div class="Navigation-Image" navigation-index="3">
+
+              <picture>
+                <source height="50" srcset="https://tvazteca.brightspotcdn.com/d6/4c/b97a29e241fead75d731653d6acd/azteca7menu.svg" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="azteca 7" height="50" src="https://tvazteca.brightspotcdn.com/d6/4c/b97a29e241fead75d731653d6acd/azteca7menu.svg">
+              </picture>
+
+            </div>
+
+
+
+
+
+
+            <div class="Navigation-Image" navigation-index="4">
+
+              <picture>
+                <source height="50" srcset="assets/amasmenu.svg" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="Amas" height="50" src="assets/amasmenu.svg">
+              </picture>
+
+            </div>
+
+
+
+
+
+
+            <div class="Navigation-Image" navigation-index="5">
+
+              <picture>
+                <source width="183" height="50" srcset="assets/%2F37%2Fe3%2Fea38cf9b4b09ab6b4db74a04d7cb%2Fdeportesmenu.png" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+                <!-- <p>imageSize Autox65Logo</p> -->
+                <img class="Image" alt="deportes" width="183" height="50" src="assets/%2F37%2Fe3%2Fea38cf9b4b09ab6b4db74a04d7cb%2Fdeportesmenu.png">
+              </picture>
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="Navigations-container">
+
+          <ul class="MainNavigation Show-Navigation" data-bsp-plugin="Module78836 Module77055" navigation-index="0">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Elecciones 2024
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Política
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Finanzas
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Bienestar
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Seguridad
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Estados
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Mundo
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Opinión
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Deportes
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Espectáculos
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Tendencias
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Videos
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Galerías
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="MainNavigation Show-menu-list" data-bsp-plugin="Module78836 Module77055" navigation-index="1">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Programas completos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Academia</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">100
+                      Mexicanos</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Acércate a Rocío</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ver más</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Notas
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Galerías
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Realities y Concursos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La Academia</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Abandonados Asia, la
+                      Ruta del Dragón </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">100 Mexicanos</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Series y Novelas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lo
+                      Que Callamos Las Mujeres</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Un Día Para
+                      Vivir</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lo Que La
+                      Gente Cuenta</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Nada
+                      Personal</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Destino</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lucho
+                      en Familia</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Bandida</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Vida en el Espejo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Tío
+                      Alberto</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">A Cada Quien Su
+                      Santo </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Todas las novelas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Espectáculos y Entretenimiento
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Acércate a
+                      Rocío</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Venga La
+                      Alegría</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ventaneando</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Al Extremo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Extranormal</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Horóscopos</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Resolana Con El Capi</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Kids 7
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Masha y el Oso</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Bluey</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">El
+                      Club Winx</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Noticias
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Azteca Noticias</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">adn40</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="MainNavigation Show-menu-list" data-bsp-plugin="Module78836 Module77055" navigation-index="2">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Programas completos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Academia</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">100
+                      Mexicanos</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Acércate a Rocío</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Más Programas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Videos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Acércate a Rocío</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Al Extremo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">100 Mexicanos</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Resolana </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Venga La
+                      Alegría</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ventaneando</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Notas TV Azteca
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Notas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Galerías
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Galerías</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Realities y Concursos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La Academia</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Abandonados Asia, la
+                      Ruta del Dragón </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">100 Mexicanos</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Series y Novelas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lo
+                      Que Callamos Las Mujeres</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Espectáculos y Entretenimiento
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Acércate a
+                      Rocío</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Venga la
+                      Alegría</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ventaneando</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Al Extremo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Horóscopos</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Resolana</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="MainNavigation Show-menu-list" data-bsp-plugin="Module78836 Module77055" navigation-index="3">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  La Academia: Camino a la Fama
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      Academia: Camino a la Fama</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Programas completos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Un Día
+                      para Vivir</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lo Que La Gente
+                      Cuenta</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Podcast Lo Que La Gente
+                      Cuenta</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Masha y el Oso</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Bluey</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Notas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Notas TV Azteca</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Galerías
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Galerías</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Series
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Un Día Para
+                      Vivir</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lo Que La
+                      Gente Cuenta</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ver más</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Películas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Películas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Kids 7
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Masha y el Oso</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Bluey</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Platinum
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Platinum</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Especiales
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Especiales</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="MainNavigation Show-menu-list" data-bsp-plugin="Module78836 Module77055" navigation-index="4">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Programas completos
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Extranormal</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Cineramas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Notas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Notas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Galerías
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Galerías</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Series y Novelas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">A
+                      Cada Quien Su Santo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">La Vida en el Espejo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Tío Alberto</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Vivir
+                      a Destiempo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Quererte Así</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Todo por Amor</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Huérfanas</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Bajo el Alma</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">Los Rey</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="" target="_blank">La Mujer de Judas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Extranormal
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Extranormal</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Cineramas
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Cineramas</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Especiales
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Especiales a más +
+                      7.2</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Caminos de la Vida
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Caminos de la
+                      Vida</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+          </ul>
+
+          <ul class="MainNavigation Show-menu-list" data-bsp-plugin="Module78836 Module77055" navigation-index="5">
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  FUT Azteca
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Fut Azteca</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Leagues
+                      Cup 2024</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Liga MX</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Copa
+                      América</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Eurocopa</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">En Caliente</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Liga Árabe </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Selección
+                      Azteca </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Futbol
+                      Internacional</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  <a class="NavigationItem-text-link " href="">
+                    Champions League
+                  </a>
+
+                </div>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Esports
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Esports</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">La
+                      People’s League</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">League of
+                      Legends</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Fut
+                      Azteca Ecup by Volt</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Shooters
+                      &amp; Battle Royale</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Comunidad y Lo
+                      Nuevo</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Fighting</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Negocios</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Sports </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Galerías</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Box Azteca
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Box Azteca</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Canelo Álvarez</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Los Campeones</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">¡Qué Golpazos!</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+            <li class="MainNavigation-items" data-bsp-plugin="Module82178">
+
+              <div class="NavigationItem">
+                <div class="NavigationItem-text">
+
+                  Otros
+
+                </div>
+
+                <ul class="NavigationItem-items">
+
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Otros
+                      Deportes</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Home Run
+                      Azteca</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Ritual NFL </a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Azteca Momios</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Automovilismo
+                      Azteca</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Los
+                      Protagonistas</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">
+                      Juegos Olímpicos de París 2024</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Tenis</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Azteca Golf</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Lucha
+                      Azteca</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Programas
+                      Originales TV Azteca Deportes</a>
+                  </li>
+
+                  <li class="NavigationItem-items-item">
+                    <a class="NavigationLink" href="">Tendencia</a>
+                  </li>
+
+
+                </ul>
+
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="Page-social">
+
+          <div class="SocialBar">
+
+            <ul class="SocialBar-items">
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink twitter" href="" target="_blank" data-social-service="twitter" aria-label="twitter">
+                  <span class="SocialLink-text">
+                    AztecaNoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink instagram" href="" target="_blank" data-social-service="instagram" aria-label="instagram">
+                  <span class="SocialLink-text">
+                    aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink tiktok" href="" target="_blank" data-social-service="tiktok" aria-label="tiktok">
+                  <span class="SocialLink-text">
+                    @aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink youtube" href="" target="_blank" data-social-service="youtube" aria-label="youtube">
+                  <span class="SocialLink-text">
+                    aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink facebook" href="" target="_blank" data-social-service="facebook" aria-label="facebook">
+                  <span class="SocialLink-text">
+                    AztecaNoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink whatsapp" href="" target="_blank" data-social-service="whatsapp" aria-label="whatsapp">
+                  <span class="SocialLink-text">
+                    0029Va9zBtRHQbS2CttrWL2u
+                  </span>
+                </a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <div class="PageHeaderMain__mask"></div>
+
+
+
+
+  <div class="Page-top">
+
+    <div class="Breadcrumb">
+      <div class="Breadcrumb__container">
+
+
+        <a href="" class="Breadcrumb__item Breadcrumb__item--home">
+          <p class="Breadcrumb__body Breadcrumb__body--home">
+            Inicio
+
+          </p>
+        </a>
+
+
+
+        <a href="" class="Breadcrumb__item Breadcrumb__item--section">
+          <p class="Breadcrumb__body Breadcrumb__body--section">
+
+            Política
+
+          </p>
+        </a>
+
+
+
+        <a href="" class="Breadcrumb__item Breadcrumb__item--content">
+          <p class="Breadcrumb__body Breadcrumb__body--content">
+
+            Nota
+
+          </p>
+        </a>
+
+
+
+
+      </div>
+    </div>
+
+
+    <main class="Page-main" data-hasasidecontent="">
+      <article class="Page-mainContent" data-author="Pilar Espinoza" data-date-published="30/09/2024 | 🕑 18:48" data-list-loadmore="" data-bsp-plugin="Module52751">
+        <div class="Article-title">
+
+          <div class="ModuleType-headline">
+            <h1 class="ModuleType-headline-text">¡Millones en tu cuenta sin mover un dedo! Mexicanos se enriquecen con robots de trading IA.</h1>
+          </div>
+
+
+          <h2 class="CreativeWorkPage-subHeadline">Olvídate del trabajo duro. La inteligencia artificial está generando riquezas para personas comunes. ¡Descubre cómo puedes hacerlo también!
+          </h2>
+        </div>
+        <div class="CreativeWorkPage-metas">
+          <div class="CreativeWorkPage-metas-container">
+            <div class="CreativeWorkPage-metas-dateTags">
+              <div class="CreativeWorkPage-metas-dateTags-date">
+
+                <time class="CreativeWorkPage-datePublished" datetime="2024-09-30T18:48:33-06:00">Publicado: 30/09/2024
+                  | 🕑 18:48</time>
+
+
+                <time class="CreativeWorkPage-dateModified" datetime="2024-09-30T19:46:56-06:00">| Actualizado 🕑
+                  19:46</time>
+
+              </div>
+              <div class="Promo-tags">
+
+
+                <div class="LinkContentTag LinkContentTag--type">
+                  Notas
+                </div>
+
+
+
+
+
+                <a href="">
+
+                  <div class="LinkContentTag LinkContentTag--section" style="background-color: #00364f; color: #fff; border: 1px solid #00364f;">
+                    Política
+                  </div>
+
+                </a>
+
+
+
+              </div>
+            </div>
+
+
+            <p class="CreativeWorkPage-authorName">Escrito por: Pilar Espinoza</p>
+
+
+          </div>
+
+          <div class="CreativeWorkPage-actions">
+            <div class="ActionBar">
+              <ul class="ActionBar-items">
+                <li class="ActionBar-items-item">
+                  <a class="TwitterTweetButton" aria-label="Twitter Share" href="" target="_blank">
+                    Tweet
+                    <svg class="TwitterIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                      </path>
+                    </svg>
+
+                  </a>
+                </li>
+                <li class="ActionBar-items-item">
+
+                  <a class="CopyLinkButton" href="" rel="nofollow" data-clipboard="https%3A%2F%2Fwww.tvazteca.com%2Faztecanoticias%2Flista-nombres-y-cargos-del-gabinete-claudia-sheinbaum" data-bsp-plugin="Module68924">
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clone" class="svg-inline--fa fa-clone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z">
+                      </path>
+                    </svg>
+                    CopyLink
+                  </a>
+                  <div class="tooltip">&nbsp;
+                    <span class="tooltiptext">Copiar enlace</span>
+                  </div>
+
+                </li>
+                <li class="ActionBar-items-item">
+
+                  <a class="WhatsAppButton" href="" rel="nofollow" data-href="%C2%A1Nuevos%20nombramientos%21%20Claudia%20Sheinbaum%20anuncia%20suma%20m%C3%A1s%20nombres%20y%20cargos%20a%20su%20gabinete - https%3A%2F%2Fwww.tvazteca.com%2Faztecanoticias%2Flista-nombres-y-cargos-del-gabinete-claudia-sheinbaum" data-bsp-plugin="Module29363">
+                    WhatsApp
+                    <svg class="WhatsAppIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                      </path>
+                    </svg>
+
+                  </a>
+
+                </li>
+                <li class="ActionBar-items-item">
+                  <a class="FacebookShareButton" aria-label="Facebook Share" href="" target="_blank">
+                    Facebook
+                    <svg class="FacebookIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+                      <path d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z">
+                      </path>
+                    </svg>
+
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="Page-body-content">
+
+
+          <div class="ArticlePage-lead" data-modulewell="">
+            <figure data-module="" class="Figure">
+              <div class="Figure-container">
+                <script src="https://fast.wistia.com/embed/medias/cb7mxnuxv9.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cb7mxnuxv9 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/cb7mxnuxv9/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+              </div>
+            </figure>
+          </div>
+
+          <div class="ArticlePage-articleBody ">
+
+
+            <div class="RichTextArticleBody">
+
+              <div class="RichTextArticleBody-body">
+                <p>
+                  Bit Banco, el robot líder impulsado por inteligencia artificial, llegó a México hace solo tres meses y ya está cambiando la vida de miles de Colombianos.
+                </p>
+                <p>
+                  Su gerente general, Daniel Santos, dijo: “Nuestra tecnología de inteligencia artificial es única, no existe en ningún otro lugar del mundo. Por eso, Bit Banco es tan rentable”.
+                </p>
+                <p>
+                  Entrevistamos a 37 mexicanos que han estado usando Bit Banco desde que llegó, y parece que las afirmaciones del Sr. Santos son precisas. 
+                </p>
+                <p>
+                  Como verán en nuestro próximo segmento, personas sin experiencia en trading y con una pequeña cantidad de capital están generando 10, 20, 30 mil pesos y mas cada día con Bit Banco.
+                </p>
+                <p>
+                  Creo que Bit Banco tiene dos grandes ventajas. 
+                </p>
+                <p>
+                  Primero, su simplicidad. Al estar completamente automatizado, lo único que un usuario tiene que hacer es registrarse, iniciar sesión en su cuenta y activar el robot. A partir de ese momento, no hay nada más que hacer, porque el robot hace todo. Compra y vende en tu nombre.
+                </p>
+                <p>
+                  Segundo, el hecho de que puedes comenzar con una cantidad muy pequeña de dinero. La mayoría de las personas que entrevistamos comenzaron con poco dinero.
+                </p>
+                <p>
+                  Como se pueden imaginar, el interés en Bit Banco ha sido enorme. Por lo tanto, han cerrado sus puertas para nuevos miembros por el momento. Sin embargo, como parte de una promoción especial para nuestros lectores, logramos asegurar un número limitado de cuentas.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="ArticlePage-customFinalText Page-customFinalText"><a class="Link " href="" rel="follow">
+              Haz clic aquí para ver si todavia hay disponibilidad.
+            </a></div>
+
+        </div>
+      </article>
+    </main>
+
+
+  <footer class="Footer">
+    <div class="Footer__logo">
+
+      <a href="" aria-label="logo">
+
+        <picture>
+
+          <source width="329" height="93" srcset="https://tvazteca.brightspotcdn.com/dims4/default/2a89e11/2147483647/strip/true/crop/329x93+0+0/resize/329x93!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F66%2F73%2F31d5f15a46f996ef5af61eb2407b%2Fnoticiasfooter.png">
+
+
+
+          <img class="PageLogo-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSI5M3B4IiB3aWR0aD0iMzI5cHgiPjwvc3ZnPg==" alt="noticiasFooter.png" width="329" height="93">
+
+        </picture>
+
+      </a>
+
+    </div>
+    <div class="Footer__content">
+      <div class="FooterColumns">
+
+        <ul class="FooterColumns-columns">
+
+          <li class="FooterColumns-columns-item">
+            <div class="FooterColumn-items">
+              <div class="ListFooterColumn">
+                <div class="ModuleTitle" data-collapse-toggle="{&quot;collapsed&quot;:true,&quot;selGroup&quot;:&quot;footer .FooterColumn-items .ModuleTitle&quot;,&quot;active&quot;:true,&quot;state&quot;:&quot;collapsed&quot;}" data-bsp-plugin="Module17855">
+                  <div class="ModuleTitle-title">
+                    <div class="ModuleTitle-title-text">Visita también</div>
+                  </div>
+                  <div class="ModuleTitle-extra"></div>
+                  <div class="ModuleTitle-paginators"></div>
+                </div>
+
+                <ul class="ListFooterColumn-items">
+
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      TV Azteca
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      Azteca UNO
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      Azteca 7
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      Noticias
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      Deportes
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      adn40
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="" target="_blank">
+                      a más +
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      TV Azteca Internacional
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+                    <a class="WebpIcon__Link" href="">
+                      <img src="assets/bazlogook.webp" alt="azteca logo">
+
+                    </a>
+
+
+
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="FooterColumns-columns-item">
+            <div class="FooterColumn-items">
+              <div class="ListFooterColumn">
+                <div class="ModuleTitle" data-collapse-toggle="{&quot;collapsed&quot;:true,&quot;selGroup&quot;:&quot;footer .FooterColumn-items .ModuleTitle&quot;,&quot;active&quot;:true,&quot;state&quot;:&quot;collapsed&quot;}" data-bsp-plugin="Module17855">
+                  <div class="ModuleTitle-title">
+                    <div class="ModuleTitle-title-text">Legales</div>
+                  </div>
+                  <div class="ModuleTitle-extra"></div>
+                  <div class="ModuleTitle-paginators"></div>
+                </div>
+
+                <ul class="ListFooterColumn-items">
+
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link  Link-color " href="" data-color="#00364f" data-bsp-plugin="Module78541" style="color: rgb(0, 54, 79);">
+                      Aviso de Privacidad
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      Derechos
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      Inversionistas
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      Defensor de Audiencia
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      Promo Espacio
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link " href="">
+                      Programa de ética, integridad y cumplimiento
+                    </a>
+
+
+
+
+                  </li>
+                  <li class="ListFooterColumn-items-item">
+
+
+
+                    <a class="Link  Link-color " href="" data-color="#00364f" data-bsp-plugin="Module78541" style="color: rgb(0, 54, 79);">
+                      Trabaja con nosotros
+                    </a>
+
+
+
+
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="FooterColumns-columns-item">
+            <div class="FooterColumn-items">
+
+              <a class="Link " href="">
+                Grupo Salinas
+              </a>
+
+
+            </div>
+          </li>
+
+          <li class="FooterColumns-columns-item">
+            <div class="FooterColumn-items">
+              <div class="RichTextFooterModule">
+                <div class="RichTextFooterModule-items" data-asidemodulewell="">
+                  <p><b>TV AZTECA</b></p>
+                  <p>Periférico Sur 4121,<br>Col. Fuentes Del Pedregal, C.P. 14141,<br>Ciudad De México, México.</p>
+                </div>
+              </div>
+              <div class="RichTextFooterModule">
+                <div class="RichTextFooterModule-items" data-asidemodulewell="">
+                  <p><b>CONTACTO</b></p>
+                  <p><span class="Enhancement"><span class="Enhancement-item"><a class="Link " href="" rel="nofollow">
+                          contacto@tvazteca.com
+                        </a></span></span><br><span class="Enhancement"><span class="Enhancement-item"><a class="Link " href="" rel="nofollow">
+                          55 1720 1313
+                        </a></span></span> | Conmutador</p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <div class="Footer__bottom">
+      <div class="Footer__bottom-container">
+
+        <div class="Page-social">
+
+          <div class="SocialBar">
+
+            <ul class="SocialBar-items">
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink twitter" href="" target="_blank" data-social-service="twitter" aria-label="twitter">
+                  <span class="SocialLink-text">
+                    AztecaNoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink instagram" href="" target="_blank" data-social-service="instagram" aria-label="instagram">
+                  <span class="SocialLink-text">
+                    aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink tiktok" href="" target="_blank" data-social-service="tiktok" aria-label="tiktok">
+                  <span class="SocialLink-text">
+                    @aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink youtube" href="" target="_blank" data-social-service="youtube" aria-label="youtube">
+                  <span class="SocialLink-text">
+                    aztecanoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink facebook" href="" target="_blank" data-social-service="facebook" aria-label="facebook">
+                  <span class="SocialLink-text">
+                    AztecaNoticias
+                  </span>
+                </a>
+
+              </li>
+
+              <li class="SocialBar-items-item">
+
+                <a class="SocialLink whatsapp" href="" target="_blank" data-social-service="whatsapp" aria-label="whatsapp">
+                  <span class="SocialLink-text">
+                    0029Va9zBtRHQbS2CttrWL2u
+                  </span>
+                </a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="Page-partners">
+          <picture>
+            <source width="316" height="50" srcset="https://tvazteca.brightspotcdn.com/dims4/default/3c99e9b/2147483647/strip/true/crop/284x45+0+0/resize/316x50!/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc5%2F16%2Fca19254945a4b6bc727b079ec796%2Fdownload-8.png" sizes="(max-width: 576px) 85vw,(max-width: 992px) 90vw, 70vw">
+
+            <!-- <p>imageSize Autox65Logo</p> -->
+            <img class="Image" alt="Comscore logo" width="316" height="50" loading="lazy" data-sizes="auto" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgaGVpZ2h0PSI1MHB4IiB3aWR0aD0iMzE2cHgiPjwvc3ZnPg==">
+          </picture>
+        </div>
+        <p class="Page-disclaimer">
+          TV Azteca, M.R. &amp; ©, TV Azteca, S.A.B. de C.V. Todos los derechos reservados, 2024.<br>Queda prohibida la
+          reproducción total o parcial sin la autorización previa, expresa y por escrito de su titular.
+        </p>
+      </div>
+    </div>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></body>
+
+</html>
